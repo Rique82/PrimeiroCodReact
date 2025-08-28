@@ -1,10 +1,25 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
-function Header( { titulo } ){
+function Header(){
     return(
         <>
             <header>
-                <h1>{ titulo ? titulo : 'minha pagina react' }</h1>
+                <h1>Minha pagina React</h1>
+                <nav>
+                    <ul>
+                        <Link to='/'>
+                        
+                            <li>inicio</li>
+                        
+                        </Link>
+                        <Link to='/about'>
+                        
+                            <li>Sobre</li>
+
+                        </Link>
+                    </ul>
+                </nav>
             </header>
         </>
     )
